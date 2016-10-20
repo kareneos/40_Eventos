@@ -1,0 +1,59 @@
+/* responsive text queries */
+@media screen and (max-width: 992px) {
+  p,.btn,input,div,span,h4 {
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 36px;  
+  }
+  h2 {
+    font-size: 30px;  
+  }
+  h3 {
+    font-size: 24px;  
+  }
+  h4{
+    font-size: 18px;  
+  }
+   h5 {
+    font-size: 14px;  
+  }
+  h6{
+    font-size: 12px;  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p,.btn,input,div,span,h4 {
+    font-size: 95%;
+  }
+  h1 {
+    font-size: 20px;  
+  }
+  h2 {
+    font-size: 17px;  
+  }
+  h3 {
+    font-size: 15px;  
+  }
+  h4, h5, h6{
+    font-size: 13px;  
+  }
+  .text-right, #sectionblue, footer{
+        text-align: center;
+  }
+   button{
+       display: block;
+       margin-right: auto;
+       margin-left: auto;
+  }
+  .btn-lg{
+      padding: 1px 5px;
+      font-size: 12px;
+      line-height: 1.5;
+      border-radius: 3px;
+    }
+    #servicios span{
+        font-size: 4em;
+    }
+}

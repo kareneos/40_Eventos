@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  	<meta charset="utf-8">
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, inicial-scale=1">
+	  	<title>Todo App</title>
+	  	<link rel="stylesheet" href="css/bootstrap.min.css">
+	  	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  	    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	  	<link rel="stylesheet" href="css/main.css">
+	  	<link rel="stylesheet" href="css/utilities.css">
+	  	<link rel="stylesheet" href="css/queries.css">
+	</head>
+	<body>
+       <!--todo app-->
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 grisdeg">
+                        <p class=" pd-3 text-center"><b>TODO APP</b></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--agregar nueva tarea-->
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+                        <div>
+                            <textarea type="text" id="nuevaTarea" class="form-control" rows="3" required="required"></textarea>
+                            <button type="button" class="btn mt-3 grisdeg addBtn" onclick="agregarLi()"><span class="glyphicon glyphicon-plus white"></span><b> Agregar</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--checklist-->
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+                        <ul id="lista"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      <!--BOOTSTRAP-->
+      <script src="js/main.js"></script>
+      <script src="http://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
