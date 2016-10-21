@@ -4,6 +4,7 @@ function agregarLi(){
     var li = document.createElement("li");
     var valorTextArea = document.getElementById("nuevaTarea").value;
     var cuadro = check.setAttribute("type","checkbox");
+    //tache li al hacer click en checkbox
     check.onclick = function(ev){
         ev.target.parentNode.classList.toggle("checked");
     }
