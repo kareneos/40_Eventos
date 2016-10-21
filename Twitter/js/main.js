@@ -4,14 +4,14 @@ function agregarLi(){
     var li = document.createElement("li");
     var valorTextArea = document.getElementById("nuevaTarea").value;
     var cuadro = check.setAttribute("type","checkbox");
-    //tache li al hacer click en checkbox
+    //tachar li al hacer click en checkbox
     check.onclick = function(ev){
         ev.target.parentNode.classList.toggle("checked");
     }
     var texto = document.createTextNode(valorTextArea);
      //Botón para quitar un li
     var span = document.createElement("span");
-    var boteBasura = document.createTextNode("\uD83D\uDDD1");//cambiar por icono
+    var boteBasura = document.createTextNode("\uD83D\uDDD1");
     span.className = "close";
     //appendChilds
     li.appendChild(check);

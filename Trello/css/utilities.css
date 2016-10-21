@@ -5,7 +5,7 @@ a{
 a:hover{
     text-decoration: none;
 }
-img, iframe, input, textarea{
+img, iframe, textarea{
     width: 100%;
 }
 /* Shortcuts */
