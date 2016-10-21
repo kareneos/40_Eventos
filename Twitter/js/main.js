@@ -1,25 +1,37 @@
 //Crear lista al hacer click en botón
 function agregarLi(){
+    var check = document.createElement("input");
     var li = document.createElement("li");
     var valorTextArea = document.getElementById("nuevaTarea").value;
+    var cuadro = check.setAttribute("type","checkbox");
+    check.onclick = function(ev){
+        ev.target.parentNode.classList.toggle("checked");
+    }
     var texto = document.createTextNode(valorTextArea);
-    
+     //Botón para quitar un li
+    var span = document.createElement("span");
+    var boteBasura = document.createTextNode("\uD83D\uDDD1");//cambiar por icono
+    span.className = "close";
+    //appendChilds
+    li.appendChild(check);
     li.appendChild(texto);
-    
+    span.appendChild(boteBasura);
+    li.appendChild(span);
+    //No agregar campos vacíos
     if (valorTextArea.length == 0){
         alert("Por favor ingresa una tarea");
     } else {
+    //agregar nueva tarea
         document.getElementById("lista").appendChild(li);
     }
-    document.getElementById("nuevaTarea").value =""; 
-    //Botón para quitar un li
-    var span = document.createElement("span");
-    var boteBasura = document.createTextNode("x");//cambiar por icono
-    span.className = "close";
-    span.appendChild(boteBasura);
-    li.appendChild(span);
-    //Checkbox
-    var check = document.createElement("input");
-    var cuadro = check.setAttribute("type","checkbox");
-    li.appendChild(check);
+   //No quede texto guardado en el textarea
+   document.getElementById("nuevaTarea").value =""; 
+   //Eliminar un elemento de la lista
+    var quitar = document.getElementsByClassName("close");
+    for (var i = 0; i < quitar.length; i++) {
+      quitar[i].onclick = function() {
+        var elimina = this.parentElement;
+        elimina.style.display = "none";
+      }
+    }  
 }
