@@ -4,20 +4,24 @@
 	  	<meta charset="utf-8">
 	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  	<meta name="viewport" content="width=device-width, inicial-scale=1">
-	  	<title>Todo App</title>
+	  	<title>Trello</title>
 	  	<link rel="stylesheet" href="css/bootstrap.min.css">
 	  	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	  	    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	  	<link rel="stylesheet" href="css/main.css">
 	  	<link rel="stylesheet" href="css/utilities.css">
+	  	<link rel="stylesheet" href="css/main.css">
+	  	
 	</head>
 	<body>
         <div class="container">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="bg-gray mt-5" id="tarjetas">
-                    <button type="button" class="btn mt-5" onclick="muestraInput()" id="boton1">Añadir una lista...</button>
-                    <div class="mt-5" id="anadeLista"></div>
-                    <div class="mt-5 pd-3" id="titulo"></div>
+               <h1 class="text-center white"><em>Trello</em></h1>
+                <div class="mt-5 inl tarjetas">
+                    <button type="button" class="btn btn-lg mt-5 btn-info center-block" onclick="muestraInput()" id="boton1">Añadir una lista...</button>
+                </div>
+                <div class="inl bg-gray">
+                     <div id="anadeLista"></div>
+                    <div class="pd-3" id="titulo"></div>
                 </div>
             </div>
         </div>
